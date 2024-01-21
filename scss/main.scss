@@ -1,0 +1,39 @@
+@import 'normalize.css/normalize';
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import 'variables.scss';
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/_buttons";
+@import "bootstrap/scss/_forms";
+@import "bootstrap/scss/_spinners";
+
+@import 'swiper/css/bundle';
+
+@import 'fonts';
+@import 'typography';
+@import 'helpers';
+@import 'base';
+
+@import 'blocks/page-header';
+@import 'blocks/page-footer';
+@import 'blocks/main-nav';
+@import 'blocks/intro-section';
+@import 'blocks/stats-section';
+@import 'blocks/guarantee-section';
+@import 'blocks/faq-section';
+@import 'blocks/btn';
+@import 'blocks/card-item';
+@import 'blocks/services-section';
+@import 'blocks/know-how-section';
+@import 'blocks/modal';
+@import 'blocks/form';
+@import 'blocks/just-validate';
+@import 'blocks/circle-animated-bg';

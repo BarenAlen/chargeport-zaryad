@@ -1,0 +1,183 @@
+@property --progress {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+.know-how-section {
+    position: relative;
+    padding: 13.75rem 0 0;
+    min-height: 50rem;
+    background: url('/static/images/know-how-section-bg.png') center bottom no-repeat, lightgray 0.295px -72.527px / 114.609% 118.132% no-repeat;
+    .container {
+        position: relative;
+    }
+    &__content {
+        max-width: 37.5rem;
+        color: #fff;
+    }
+    &__progress {
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        left: 0;
+        top: -180px;
+        
+
+        .counter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__light {
+        width: 78px;
+        height: 124px;
+        background-image: url("/static/images/light.svg");
+        background-repeat: no-repeat;
+        background-size: 78px 124px;
+        background-position: center;
+
+        position: absolute;
+        top: -160px;
+        left: 190px;
+        &::before {
+            content: "";
+            display: block;
+            width: 118px;
+            height: 172px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("/static/images/light-blur.svg");
+            background-repeat: no-repeat;
+            background-size: 118px 172px;
+            background-position: center;
+            opacity: 0;
+            z-index: 1;
+            animation: fade 3000ms cubic-bezier(0.510, -0.005, 0.155, 1.155) infinite;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        min-height: 50rem;
+        &__progress {
+            right: 0;
+            left: auto;
+            left: initial;
+        }
+        &__light {
+            left: auto;
+            left: initial;
+            top: 130px;
+            right: 60px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 6.25rem 0 0;
+        &__content {
+            font-size: $fsz-lg;
+        }
+        &__progress {
+            top: 20px;
+        }
+        &__light {
+            right: 170px;
+            top: 270px;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        &__progress {
+            right: 150px;
+        }
+        &__light {
+            right: 340px;
+        }
+    }
+    @media screen and (min-width: 2000px) {
+        background-size: cover, cover;
+        &__light {
+            right: 480px;
+        }   
+    }
+}
+.counter {
+    position: relative;
+    transition: --progress 1s;
+    counter-reset: progress var(--progress);
+    animation: progressNum 4s linear infinite;
+    white-space: nowrap;
+    
+    &::before {
+        content: counter(progress);
+        display: inline;
+        font-size: 30px;
+        font-size: 50px;
+        font-weight: 700;
+        @extend .text-accent-gradient;
+    }
+
+    sup {
+        vertical-align: top;
+        font-size: 2em;
+        font-weight: 700;
+        top: 0.6em;
+        @extend .text-accent-gradient;
+    }
+}
+// arcLength 439.6
+.svg-indicator {
+    width: 160px;
+    height: 160px;
+    transform: rotate(-90deg);
+
+    
+    &-track {
+        stroke: rgba(255, 255, 255, 0.15);
+    }
+    &-indication {
+        stroke: #5EBEB6;
+        stroke-dasharray: 439.6px;
+        stroke-dashoffset: 329.7px; // 25%
+
+        animation: progress 4s linear infinite;
+    }
+
+    &-indication,
+    &-track {
+        cx: 80px;
+        cy: 80px;
+        r: 70px;
+        fill: transparent;
+        stroke-width: 10px;
+    }
+}
+
+@keyframes progress {
+    from {
+        stroke-dashoffset: 439.6px;
+    }
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+@keyframes progressNum {
+    from {
+        --progress: 0;
+    }
+    to {
+        --progress: 100;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,120 @@
+.faq-section {
+    padding: 1.875rem 0 18.75rem;
+    position: relative;
+    a {
+        color: #1A949D;
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: radial-gradient(106.28% 77.27% at 132.86% 23.81%, #FFF 0%, #E5ECF1 100%);
+        background-repeat: no-repeat;
+        background-position: center;
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url(/static/images/faq-section-bg.png);
+            background-repeat: no-repeat;
+            background-position: right 0 top 80px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__circle {
+        width: 738px;
+        height: 738px;
+        position: absolute;
+        right: 160px;
+        top: -16px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__content {
+            max-width: 45.625rem;
+        }
+    }
+}
+
+.faq-spoiler {
+    margin-bottom: 0.625rem;
+    padding: 1.25rem 0;
+    padding-left: 1.25rem;
+    border-radius: 10px;
+    background: #E1E8ED;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__head {
+        padding-right: 64px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+    }
+    &__body {
+        height: 0;
+        overflow: hidden;
+        transition: all 250ms ease;
+        font-size: $fsz-sm;
+        color: #888;
+    }
+    &__body-inner {
+        padding-top: 0.75rem;
+        padding-right: 1.25rem;
+    }
+    &__toggler {
+        padding: 6px;
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        right: 1.25rem;
+        z-index: 1;
+        top: -7px;
+        svg {
+            .icon-plus-vertical {
+                opacity: 1;
+                transition: opacity 200ms ease-in-out;
+            }
+        }
+    }
+    &.is-open {
+        .faq-spoiler__body {
+            height: auto;
+        }
+        .faq-spoiler__head::after {
+            transform: rotate(-180deg);
+        }
+        .faq-spoiler__toggler {
+            svg {
+                .icon-plus-vertical {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__body {
+            font-size: $fsz-lg;
+            p {
+                line-height: 1.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chargeport</title>
+	</head>
+	<body>
+		<div class="page-wrap">
+			<header class="page-header">
+				<div class="container">
+					<div class="page-header__row">
+						<a class="page-header__logo" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="194" height="30" viewBox="0 0 194 30" fill="none">
+								<g clip-path="url(#clip0_1243_234)">
+									<path d="M59.9166 20.8828C58.2162 21.6153 56.6373 21.9409 55.1394 21.9409C52.0222 21.9409 49.4717 20.9235 47.4474 18.9294C45.4232 16.9354 44.4111 14.3716 44.4111 11.3601C44.4111 8.38935 45.4637 5.86625 47.5689 3.79079C49.6336 1.75603 52.1841 0.738647 55.1799 0.738647C56.8802 0.738647 58.4186 1.1049 59.8761 1.87811V7.24989C58.6211 5.78486 57.0422 5.09304 55.0989 5.09304C53.3581 5.09304 51.9412 5.66277 50.7671 6.84293C49.6336 8.02309 49.0263 9.52882 49.0263 11.3601C49.0263 13.2321 49.5931 14.7785 50.7671 15.918C51.9007 17.0574 53.3176 17.6272 55.0989 17.6272C56.9612 17.6272 58.5401 16.8947 59.8761 15.4703V20.8828H59.9166Z" fill="white" />
+									<path d="M76.2723 21.4525H72.1024V13.8425C72.1024 11.9299 71.3737 10.9939 69.8758 10.9939C67.973 10.9939 67.0014 12.174 67.0014 14.575V21.4525H62.8315V0.291016H67.0014V9.73231C67.973 8.30798 69.39 7.57546 71.2522 7.57546C72.8716 7.57546 74.1266 8.06381 74.9768 8.9998C75.827 9.97648 76.2723 11.3601 76.2723 13.1507V21.4525Z" fill="white" />
+									<path d="M93.5587 21.4525H89.4698V19.7026C88.3767 21.2084 86.9193 21.9409 85.138 21.9409C83.2757 21.9409 81.6968 21.2491 80.4418 19.8654C79.1868 18.4818 78.5391 16.7726 78.5391 14.7785C78.5391 12.7031 79.1463 11.0345 80.4013 9.65091C81.6159 8.30797 83.1947 7.61615 85.0975 7.61615C86.9598 7.61615 88.3767 8.30797 89.4293 9.65091V8.0231H93.5992V21.4525H93.5587ZM89.4698 14.7378C89.4698 13.7204 89.1459 12.8658 88.5386 12.2147C87.8909 11.5636 87.1217 11.238 86.1501 11.238C85.1785 11.238 84.3688 11.5636 83.7615 12.2147C83.1543 12.8658 82.8304 13.7204 82.8304 14.7378C82.8304 15.7145 83.1543 16.5691 83.7615 17.2202C84.3688 17.8713 85.1785 18.1969 86.1501 18.1969C87.1217 18.1969 87.9314 17.8713 88.5386 17.2202C89.1864 16.6098 89.4698 15.7552 89.4698 14.7378Z" fill="white" />
+									<path d="M106.554 8.02311L105.947 11.7671C105.502 11.6043 104.935 11.5229 104.287 11.5229C102.101 11.5229 101.008 12.8251 101.008 15.4703V21.4525H96.8379V8.02311H100.927V10.2613C101.817 8.63354 103.113 7.81964 104.854 7.81964C105.421 7.77894 106.028 7.86033 106.554 8.02311Z" fill="white" />
+									<path d="M121.979 21.127C121.979 26.4581 119.55 29.1439 114.651 29.1439C112.586 29.1439 110.886 28.6149 109.509 27.5975C108.173 26.5801 107.445 25.3186 107.283 23.7722L111.898 23.2838C112.019 24.9116 112.951 25.7255 114.651 25.7255C116.756 25.7255 117.809 24.3419 117.809 21.6153V19.7433C116.635 21.0863 115.177 21.7781 113.436 21.7781C111.534 21.7781 109.955 21.127 108.74 19.8247C107.526 18.5225 106.918 16.854 106.918 14.7785C106.918 12.7438 107.566 11.0346 108.821 9.69162C110.076 8.30798 111.696 7.65686 113.598 7.65686C115.38 7.65686 116.756 8.34868 117.768 9.73232V8.10451H121.938V21.127H121.979ZM117.93 14.6971C117.93 13.7205 117.606 12.9065 116.999 12.2554C116.351 11.5636 115.461 11.1973 114.368 11.1973C113.436 11.1973 112.667 11.5229 112.1 12.2147C111.534 12.8658 111.21 13.7205 111.21 14.7378C111.21 15.7552 111.493 16.6098 112.1 17.2202C112.708 17.8307 113.517 18.1562 114.529 18.1562C115.501 18.1562 116.311 17.8307 116.959 17.1795C117.647 16.4877 117.93 15.6738 117.93 14.6971Z" fill="white" />
+									<path d="M138.577 15.389H128.213C128.294 16.3656 128.618 17.0982 129.104 17.6679C129.671 18.319 130.399 18.6039 131.371 18.6039C132.748 18.6039 133.679 18.1155 134.205 17.1389L138.172 17.9935C136.998 20.5979 134.731 21.9002 131.371 21.9002C129.225 21.9002 127.485 21.2084 126.068 19.8247C124.691 18.4818 124.003 16.7726 124.003 14.7378C124.003 12.6624 124.691 10.9532 126.027 9.61023C127.363 8.26729 129.144 7.57547 131.25 7.57547C133.476 7.57547 135.217 8.26729 136.593 9.69162C137.889 11.0346 138.537 12.7438 138.537 14.8599V15.389H138.577ZM134.529 12.8659C134.164 11.4008 133.152 10.6276 131.452 10.6276C129.873 10.6276 128.861 11.3601 128.375 12.8659H134.529Z" fill="white" />
+									<path d="M155.743 14.6971C155.743 16.7726 155.135 18.4818 153.88 19.8654C152.625 21.2491 151.087 21.9002 149.184 21.9002C147.444 21.9002 145.986 21.2084 144.812 19.8247C144.853 20.2317 144.893 20.8421 144.893 21.5746V29.1846H140.723V8.02312H144.731V9.73232C145.662 8.30798 147.12 7.57547 149.063 7.57547C150.966 7.57547 152.545 8.26729 153.8 9.61023C155.095 10.9939 155.743 12.6624 155.743 14.6971ZM151.411 14.6971C151.411 13.6798 151.087 12.8659 150.48 12.2147C149.873 11.5636 149.063 11.2787 148.051 11.2787C147.039 11.2787 146.269 11.6043 145.662 12.2554C145.055 12.9065 144.772 13.7611 144.772 14.8599C144.772 15.8366 145.095 16.6505 145.743 17.3016C146.391 17.9528 147.16 18.2783 148.132 18.2783C149.103 18.2783 149.913 17.9528 150.52 17.3016C151.128 16.5691 151.411 15.7145 151.411 14.6971Z" fill="white" />
+									<path d="M172.989 14.7378C172.989 16.7726 172.26 18.4818 170.803 19.8247C169.305 21.2084 167.442 21.9002 165.216 21.9002C162.949 21.9002 161.086 21.2084 159.629 19.8247C158.172 18.4818 157.443 16.7726 157.443 14.7378C157.443 12.7031 158.172 10.9939 159.629 9.61023C161.086 8.22659 162.949 7.57547 165.216 7.57547C167.483 7.57547 169.345 8.26729 170.803 9.61023C172.26 10.9532 172.989 12.7031 172.989 14.7378ZM168.616 14.7378C168.616 13.7611 168.293 12.9472 167.645 12.2961C166.997 11.645 166.187 11.3194 165.216 11.3194C164.244 11.3194 163.435 11.645 162.787 12.2961C162.139 12.9472 161.815 13.7611 161.815 14.7378C161.815 15.7145 162.139 16.5284 162.787 17.1795C163.435 17.8307 164.244 18.1562 165.216 18.1562C166.187 18.1562 166.997 17.8307 167.645 17.1795C168.293 16.5284 168.616 15.7145 168.616 14.7378Z" fill="white" />
+									<path d="M184.972 8.02311L184.365 11.7671C183.919 11.6043 183.353 11.5229 182.705 11.5229C180.519 11.5229 179.426 12.8251 179.426 15.4703V21.4525H175.256V8.02311H179.345V10.2613C180.235 8.63354 181.531 7.81964 183.272 7.81964C183.879 7.77894 184.446 7.86033 184.972 8.02311Z" fill="white" />
+									<path d="M194 11.5636H191.53V21.4525H187.361V11.5636H185.782V8.02311H187.361V3.05829H191.53V8.02311H194V11.5636Z" fill="white" />
+									<path d="M20.5659 24.6268C21.4565 27.9638 24.4119 28.9812 24.4119 28.9812L26.0717 23.2024C26.517 23.2431 27.0028 23.2838 27.4482 23.2838C33.3993 23.2838 38.2574 18.4411 38.2574 12.4182C38.2574 6.3953 33.3993 1.59326 27.4482 1.59326C24.0475 1.59326 21.0517 3.18038 19.0679 5.62209C19.0679 5.62209 18.0558 6.84295 17.1652 9.04049C16.477 11.1973 15.9912 14.982 19.0275 19.1736C19.1084 19.0922 20.0396 17.8714 20.9302 15.7552C21.8614 13.517 22.7115 11.4008 23.0759 10.9125L23.6022 9.97648C24.4119 8.71493 25.8288 7.86033 27.4482 7.86033C29.9582 7.86033 32.0229 9.93579 32.0229 12.4589C32.0229 14.982 29.9582 17.0575 27.4482 17.0575C26.5575 17.0575 25.7478 16.7726 24.9786 16.4063C23.9665 15.918 23.3997 15.918 23.3997 15.918C23.3997 15.918 20.9707 20.4352 20.8088 20.8421C20.3634 21.9409 19.9991 22.5106 20.5659 24.6268Z" fill="url(#paint0_linear_1243_234)" />
+									<path d="M19.1085 18.9702C19.1085 18.9702 19.149 18.9702 19.1085 18.9702C16.0722 14.7379 16.558 10.9532 17.2462 8.83704C16.3151 11.0753 15.4649 13.1914 15.1006 13.6798C14.4933 15.5111 12.793 16.8133 10.7688 16.8133C8.25876 16.8133 6.19407 14.7379 6.19407 12.2147C6.19407 9.69164 8.25876 7.61619 10.8093 7.61619C11.6594 7.61619 12.1452 7.77897 12.9144 8.14523C12.874 8.14523 13.2788 8.30801 13.2383 8.30801C14.4124 8.71496 14.7362 8.67426 14.7362 8.67426C14.7362 8.67426 15.9103 5.66282 17.2867 3.95362C16.7199 3.50597 15.5054 2.61067 14.2504 1.91885C13.7241 1.63399 12.9144 1.47121 12.1048 1.38982V1.43051C11.6999 1.38982 11.2546 1.34912 10.8093 1.34912C4.81761 1.38982 0 6.23255 0 12.2147C0 18.1969 4.81761 23.0804 10.8093 23.0804C14.1694 23.0804 17.1653 21.534 19.149 19.1329C19.1085 19.0109 19.1085 18.9702 19.1085 18.9702Z" fill="url(#paint1_linear_1243_234)" />
+									<path d="M18.5823 6.35461C18.218 6.92435 17.6512 7.81964 17.1654 8.9998C16.4772 11.1567 16.0318 14.9413 19.1086 19.1329C19.1491 19.0922 19.9183 18.0341 20.6875 16.3249C20.8899 14.046 20.1612 10.2614 18.5823 6.35461Z" fill="url(#paint2_linear_1243_234)" />
+								</g>
+								<defs>
+									<linearGradient id="paint0_linear_1243_234" x1="16.63" y1="15.2984" x2="38.2519" y2="15.2984" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#1A949D" />
+										<stop offset="1" stop-color="#5EBEB6" />
+									</linearGradient>
+									<linearGradient id="paint1_linear_1243_234" x1="0" y1="12.2206" x2="19.133" y2="12.2206" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#0060AC" />
+										<stop offset="0.1253" stop-color="#0064AE" />
+										<stop offset="0.3102" stop-color="#0071B2" />
+										<stop offset="0.5322" stop-color="#1C86B7" />
+										<stop offset="0.7806" stop-color="#3EA2B9" />
+										<stop offset="1" stop-color="#5EBEB6" />
+									</linearGradient>
+									<linearGradient id="paint2_linear_1243_234" x1="17.1205" y1="13.1633" x2="20.415" y2="12.3523" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#007F80" />
+										<stop offset="0.2795" stop-color="#00878A" />
+										<stop offset="0.7227" stop-color="#2599A0" />
+									</linearGradient>
+									<clipPath id="clip0_1243_234">
+										<rect width="194" height="28.8936" fill="white" transform="translate(0 0.291016)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<div class="page-header__collapse">
+							<nav class="page-header__nav" id="main-nav">
+								<ul class="main-nav">
+									<li>
+										<a class="main-nav__link" href="#stats-section">Зарядные станции</a>
+									</li>
+									<li>
+										<a class="main-nav__link" href="#services-section">Услуги</a>
+									</li>
+									<li>
+										<a class="main-nav__link" href="#faq-section">FAQ</a>
+									</li>
+									<li>
+										<a class="main-nav__link" href="#contacts-section">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+							<a class="page-header__tel" href="tel:+7(993)257-47-77">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4741 21.8324 20.7293C21.7209 20.9845 21.5572 21.2136 21.352 21.4018C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.945 19.8199 21.92C16.7428 21.5856 13.7869 20.5341 11.1899 18.85C8.77376 17.3146 6.72527 15.2661 5.18993 12.85C3.49991 10.2412 2.44818 7.27097 2.11993 4.17997C2.09494 3.90344 2.12781 3.62474 2.21643 3.3616C2.30506 3.09846 2.4475 2.85666 2.6347 2.6516C2.82189 2.44653 3.04974 2.28268 3.30372 2.1705C3.55771 2.05831 3.83227 2.00024 4.10993 1.99997H7.10993C7.59524 1.9952 8.06572 2.16705 8.43369 2.48351C8.80166 2.79996 9.04201 3.23942 9.10993 3.71997C9.23656 4.68004 9.47138 5.6227 9.80993 6.52997C9.94448 6.8879 9.9736 7.27689 9.89384 7.65086C9.81408 8.02482 9.6288 8.36809 9.35993 8.63998L8.08993 9.90997C9.51349 12.4135 11.5864 14.4864 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1858 16.3491 14.1061C16.723 14.0263 17.112 14.0554 17.4699 14.19C18.3772 14.5285 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z" stroke="url(#paint0_linear_1535_64)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<defs>
+										<linearGradient id="paint0_linear_1535_64" x1="2.09439" y1="11.9722" x2="21.9955" y2="11.9722" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#1A949D" />
+											<stop offset="1" stop-color="#5EBEB6" />
+										</linearGradient>
+									</defs>
+								</svg>
+								+7 (993) 257-47-77
+							</a>
+							<button class="page-header__btn btn btn-accent js-btn-callback" type="button"><span>Обратный звонок</span></button>
+						</div>
+						<button class="page-header__nav-toggler" id="main-nav-toggler" type="button">
+							<svg class="burger-menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 18h18M3 12h18M3 6h18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+							<svg class="burger-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<div class="page-content">
+				<section class="intro-section">
+					<div class="intro-section__bg js-intro-bg">
+						<div></div>
+						<div></div>
+						<div class="visible"></div>
+					</div>
+					<div class="container">
+						<div class="intro-section__content">
+							<h1 class="intro-section__name">MIQ I22B</h1>
+							<h2 class="intro-section__title">Домашняя зарядная станция для электромобилей</h2>
+							<p>Теперь вы можете наслаждаться быстрой, безопасной, надежной и удобной зарядкой всего за несколько часов, пока спите, отдыхаете или проводите время со своей семьей. Зарядные станции для вашего электроавтомобиля. Установка, продажа и обслуживание</p>
+							<button class="btn btn-accent js-btn-callback" type="button">
+								<span>Оставить заявку</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="stats-section" id="stats-section">
+					<div class="container">
+						<div class="stats-section__row">
+							<div class="stats-section__img">
+								<img src="static/images/stats-section-img.png" alt="" />
+								<div class="stats-section__circle">
+									<div class="circle-animated-bg"></div>
+								</div>
+							</div>
+							<div class="stats-section__content">
+								<h2 class="section-title text-accent-gradient">
+									<span class="text-white">Станция быстрой зарядки</span>
+									MIQ I22B
+								</h2>
+								<ul class="stats-list">
+									<li>
+										<span>Стандарт интерфейс</span>
+										<div class="stats-list__title">Type 2</div>
+									</li>
+									<li>
+										<span>Выходной ток</span>
+										<div class="stats-list__title">AC</div>
+									</li>
+									<li>
+										<span>Выходная мощность</span>
+										<div class="stats-list__title">22kW</div>
+									</li>
+									<li>
+										<span>Входное напряжение</span>
+										<div class="stats-list__title">400V</div>
+									</li>
+								</ul>
+								<button class="btn btn-accent js-btn-callback" type="button">
+									<span>Оставить заявку</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="know-how-section">
+					<div class="container">
+						<div class="know-how-section__content">
+							<h2 class="section-title text-accent-gradient">
+								<span class="text-white">Chargeport</span>
+								Как это работает?
+							</h2>
+							<p>Chargeport - это домашняя зарядная станция для электромобилей, подходящая для зарядки всех транспортных средств с разъёмом type2, включая как модели электромобилей (EV), такие как Tesla, Nissan LEAF или BMW i3, так и подключаемые гибридные модели (PHEV), такие как Chevy Volt или Ford Fusion Energi и др.</p>
+							<p>Chargeport безопасно и надежно подает переменный ток мощностью 22 кВт. Она оснащена устойчивым к атмосферным воздействиям корпусом, что делает ее подходящей для установки как в домашнем гараже и закрытом паркинге, так и на открытых площадках.</p>
+						</div>
+						<div class="know-how-section__progress">
+							<div class="counter"><sup>%</sup></div>
+							<svg class="svg-indicator">
+								<circle class="svg-indicator-track" />
+								<circle class="svg-indicator-indication" />
+							</svg>
+						</div>
+						<div class="know-how-section__light"></div>
+					</div>
+				</section>
+
+				<section class="guarantee-section">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-5">
+								<h2 class="section-title">
+									<span class="text-white">Chargeport</span>
+									Гарантия
+								</h2>
+							</div>
+							<div class="col-lg-7">
+								<ul>
+									<li>На все оборудование гарантия 2 года</li>
+									<li>Защита от перегрузки электрической сети дома</li>
+									<li>Интеллектуальные решения по балансировке для домов с недостаточной свободной мощностью</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="services-section" id="services-section">
+					<div class="container">
+						<div class="services-section__content">
+							<h2 class="section-title text-accent-gradient">
+								<span>Chargeport</span>
+								Услуги
+							</h2>
+							<div class="card-items-list row pt-4">
+								<div class="col-lg-4">
+									<div class="card-item card-item-service-1">
+										<h3 class="card-item__title">Продажа зарядных станций</h3>
+										<p>Chargeport 22 kw - настенное зарядное устройство, подходящее для домашнего и коммерческого использования. Зарядное устройство можно закрепить на стене, либо установить на напольной стойке. Станцию возможно установить как в теплом помещение так и на уличной парковке, защищена от влаги и минусовых температур</p>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="card-item card-item-service-2">
+										<h3 class="card-item__title">Установка</h3>
+										<p>Монтаж под ключ: наши специалисты проведут комплексные работы по установке и подключению зарядных станций. В том числе согласование с Управляющими Компаниями, ТСЖ проектов по установке зарядных станций для электромобилей (подземные паркинги в многоквартирных домах), согласование с энергосетевыми компаниями технического присоединения для установки зарядной станции для электромобилей</p>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="card-item card-item-service-3">
+										<h3 class="card-item__title">Сервисное обслуживание</h3>
+										<p>Круглосуточная служба поддержка клиентов, помощь в эксплуатации, команда инженеров при необходимости выезжает на место для выявления и устранения проблемы.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="faq-section" id="faq-section">
+					<div class="container">
+						<div class="faq-section__content">
+							<h2 class="section-title text-accent-gradient">
+								<span>Chargeport</span>
+								Популярные вопросы
+							</h2>
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<div>Куда обращаться если станция перестала работать?</div>
+									<button type="button" class="faq-spoiler__toggler" data-spoiler-toggler>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path class="icon-plus-vertical" d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner">
+										<p>В случае, если установленная нами станция не запускается или есть подозрения на неисправность, просьба обратиться в нашу круглосуточную службу поддержки через TG <a href="https://t.me/chargeport" target="_blank">@chargeport</a> или по электронной почте <a href="mailto:help@chargeport.ru">help@chargeport.ru</a>. После уточнения проблемы мы направим команду инженеров для устранения неисправности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<div>Что делать, если не хватает мощности для установки зарядной станции?</div>
+									<button type="button" class="faq-spoiler__toggler" data-spoiler-toggler>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path class="icon-plus-vertical" d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner">
+										<p>Современные станции могут настраиваться для ограничения максимальной мощности зарядки. Так, если в вашем доме или сети паркинга есть только 5 кВт мощности, мы поможем настроить станцию именно на эту мощность. Для желающих установить станцию в загородном доме мы предлагаем оптимальное решение с балансировкой мощности, когда станция контролирует потребление бытовых приборов и свободную электроэнергию направляет на зарядку электромобиля. Это позволяет быстро и безопасно заряжать электромобиль даже там, где нет свободных мощностей даже на одну лишнюю розетку.</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<div>Как выбрать станцию для дома?</div>
+									<button type="button" class="faq-spoiler__toggler" data-spoiler-toggler>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path class="icon-plus-vertical" d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner">
+										<p>После того, как вы выбрали станцию с нужным коннектором для вашего электромобиля, необходимо подобрать станцию под свободную мощность. Если имеющаяся свободная мощность недостаточна, необходимо остановить выбор на настраиваемых станциях с регулировкой максимальной мощности зарядки.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="faq-section__bg">
+						<div class="faq-section__circle">
+							<div class="circle-animated-bg"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<footer class="page-footer" id="contacts-section">
+				<div class="page-footer__container container">
+					<div class="page-footer__content">
+						<div class="page-footer__head">
+							<div class="row justify-content-between">
+								<div class="col-md-6">
+									<div class="page-footer__title">Остались вопросы?<br />Свяжитесь с нами</div>
+								</div>
+								<div class="col-md-auto">
+									<button type="button" class="btn btn-accent js-btn-callback">
+										<span>Обратный звонок</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<a class="page-footer__link" href="tel:+7 (993) 257-47-77">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										<path d="M20.0667 6.66658C21.3691 6.92067 22.5659 7.55759 23.5042 8.49583C24.4424 9.43407 25.0793 10.6309 25.3334 11.9333M20.0667 1.33325C22.7724 1.63383 25.2955 2.84548 27.2217 4.76926C29.1479 6.69304 30.3628 9.2146 30.6667 11.9199M29.3334 22.5599V26.5599C29.3349 26.9313 29.2589 27.2988 29.1101 27.639C28.9613 27.9793 28.7431 28.2847 28.4695 28.5357C28.1959 28.7868 27.8728 28.9779 27.5211 29.0969C27.1693 29.2158 26.7966 29.26 26.4267 29.2266C22.3239 28.7808 18.3827 27.3788 14.9201 25.1333C11.6985 23.0861 8.96719 20.3548 6.92007 17.1333C4.66671 13.6549 3.2644 9.69458 2.82674 5.57325C2.79342 5.20454 2.83724 4.83293 2.95541 4.48208C3.07357 4.13124 3.2635 3.80884 3.51309 3.53541C3.76269 3.26199 4.06648 3.04353 4.40513 2.89395C4.74378 2.74436 5.10986 2.66693 5.48007 2.66659H9.48007C10.1271 2.66022 10.7545 2.88936 11.2451 3.3113C11.7357 3.73323 12.0562 4.31918 12.1467 4.95992C12.3156 6.24001 12.6287 7.49689 13.0801 8.70659C13.2595 9.18382 13.2983 9.70247 13.1919 10.2011C13.0856 10.6997 12.8386 11.1574 12.4801 11.5199L10.7867 13.2133C12.6848 16.5513 15.4487 19.3152 18.7867 21.2133L20.4801 19.5199C20.8426 19.1614 21.3003 18.9144 21.7989 18.808C22.2975 18.7017 22.8162 18.7405 23.2934 18.9199C24.5031 19.3713 25.76 19.6844 27.0401 19.8533C27.6878 19.9446 28.2793 20.2709 28.7021 20.7699C29.125 21.269 29.3496 21.906 29.3334 22.5599Z" stroke="url(#paint0_linear_432_746)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<defs>
+											<linearGradient id="paint0_linear_432_746" x1="2.79151" y1="15.2968" x2="30.6596" y2="15.2968" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<span>+7 (993) 257-47-77</span>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a class="page-footer__link" href="https://t.me/chargeport">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										<path d="M10.8812 28.5129L11.2895 28.2243C11.2743 28.2027 11.2602 28.1858 11.2506 28.1747L11.2502 28.1742C11.2144 28.1155 11.186 28.0526 11.1657 27.9869C11.1656 27.9865 11.1655 27.9862 11.1654 27.9859L8.47206 19.0793L8.39832 18.8355L8.15771 18.7518L3.3248 17.0709C3.32477 17.0709 3.32474 17.0709 3.32471 17.0709C2.89878 16.9223 2.5281 16.6477 2.26187 16.2836C1.99562 15.9194 1.84643 15.4828 1.83408 15.0319C1.82174 14.5809 1.94684 14.1368 2.19277 13.7586C2.43843 13.3808 2.79305 13.0866 3.20965 12.9149C3.21011 12.9147 3.21058 12.9145 3.21104 12.9143L27.1025 3.2684L27.1028 3.26827C27.4768 3.117 27.8848 3.06995 28.2834 3.13214C28.682 3.19432 29.0563 3.36341 29.3664 3.62142L29.3672 3.62206C29.6752 3.87725 29.908 4.21139 30.0408 4.58871C30.1735 4.96604 30.2012 5.37235 30.1208 5.76419L30.1207 5.76485L25.771 27.1175C25.7709 27.118 25.7708 27.1185 25.7707 27.119C25.6651 27.621 25.3904 28.0716 24.9923 28.3953C24.594 28.7192 24.0965 28.8964 23.5831 28.8972C23.0949 28.8966 22.6207 28.7335 22.2355 28.4336L22.2345 28.4329L16.8608 24.2701L16.4948 23.9866L16.184 24.3297L12.6038 28.2826L12.4418 28.419C12.3928 28.4533 12.3403 28.4821 12.285 28.505L12.285 28.505L12.2814 28.5065C12.2606 28.5153 12.2431 28.5238 12.2309 28.53L12.2152 28.5379L12.2136 28.5388C12.1384 28.5624 12.0601 28.5751 11.9811 28.5765L11.9806 28.5765C11.9617 28.5769 11.9446 28.5782 11.9295 28.58C11.8993 28.5786 11.8693 28.5758 11.8395 28.5713L11.8087 28.5581L11.7561 28.5537C11.6769 28.5307 11.6015 28.4958 11.5326 28.4501L11.5327 28.45L11.5237 28.4444C11.5104 28.4359 11.4955 28.4252 11.4662 28.4028L11.4626 28.4001C11.3954 28.3499 11.3364 28.2897 11.2876 28.2216L10.8812 28.5129ZM10.8812 28.5129C10.9599 28.6226 11.055 28.7197 11.1631 28.8005L10.6875 28.1329C10.7241 28.2519 10.7772 28.3652 10.8453 28.4694C10.8508 28.478 10.8576 28.4854 10.8644 28.4928C10.8702 28.4992 10.8761 28.5056 10.8812 28.5129ZM11.2653 28.1981L11.2639 28.1959C11.2644 28.1967 11.2649 28.1974 11.2653 28.1981ZM12.8463 20.0028L12.8471 20.002L16.446 16.4018L15.8615 15.6048L10.4412 18.4274L10.0735 18.6189L10.1935 19.0156L11.2389 22.473L12.2072 22.4291L12.6199 20.4238L12.6201 20.4227C12.6525 20.2635 12.7312 20.1174 12.8463 20.0028ZM23.2563 27.1153L23.8894 27.6058L24.0521 26.8216L28.4882 5.43361L28.6773 4.52204L27.8129 4.86784L3.8416 14.4577L2.62921 14.9427L3.85549 15.3915L8.8213 17.2087L9.02842 17.2845L9.22404 17.1826L22.7777 10.1258L22.7781 10.1256C22.9546 10.0335 23.1583 10.0077 23.3522 10.0528C23.5461 10.0979 23.7174 10.2109 23.8352 10.3715C23.9529 10.532 24.0093 10.7294 23.994 10.9279C23.9788 11.1264 23.893 11.3129 23.7521 11.4535L23.7519 11.4538L14.3079 20.8978L14.2019 21.0037L14.1717 21.1506L13.7639 23.1325L13.3949 24.9257L14.6242 23.569L15.7777 22.2958C15.9188 22.1403 16.1134 22.0438 16.3226 22.0254C16.5318 22.007 16.7402 22.068 16.9063 22.1963C16.9064 22.1963 16.9064 22.1964 16.9065 22.1964L23.2563 27.1153Z" fill="url(#paint0_linear_1218_1050)" stroke="url(#paint1_linear_1218_1050)" />
+										<defs>
+											<linearGradient id="paint0_linear_1218_1050" x1="1.30755" y1="16.0123" x2="30.6583" y2="16.0123" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+											<linearGradient id="paint1_linear_1218_1050" x1="1.30755" y1="16.0123" x2="30.6583" y2="16.0123" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<span>@chargeport</span>
+								</a>
+							</div>
+							<div class="col-md-5">
+								<a class="page-footer__link" href="mailto:help@chargeport.ru">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										<path d="M5.33341 5.33325H26.6667C28.1334 5.33325 29.3334 6.53325 29.3334 7.99992V23.9999C29.3334 25.4666 28.1334 26.6666 26.6667 26.6666H5.33341C3.86675 26.6666 2.66675 25.4666 2.66675 23.9999V7.99992C2.66675 6.53325 3.86675 5.33325 5.33341 5.33325Z" stroke="url(#paint0_linear_432_749)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M29.3334 8L16.0001 17.3333L2.66675 8" stroke="url(#paint1_linear_432_749)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<defs>
+											<linearGradient id="paint0_linear_432_749" x1="2.64338" y1="16.0087" x2="29.3266" y2="16.0087" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+											<linearGradient id="paint1_linear_432_749" x1="2.64338" y1="12.6705" x2="29.3266" y2="12.6705" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<span>help@chargeport.ru</span>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<div class="page-footer__text">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										<path d="M28 13.3333C28 22.6666 16 30.6666 16 30.6666C16 30.6666 4 22.6666 4 13.3333C4 10.1507 5.26428 7.09841 7.51472 4.84797C9.76516 2.59753 12.8174 1.33325 16 1.33325C19.1826 1.33325 22.2348 2.59753 24.4853 4.84797C26.7357 7.09841 28 10.1507 28 13.3333Z" stroke="url(#paint0_linear_1218_1043)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16 17.3333C18.2091 17.3333 20 15.5424 20 13.3333C20 11.1241 18.2091 9.33325 16 9.33325C13.7909 9.33325 12 11.1241 12 13.3333C12 15.5424 13.7909 17.3333 16 17.3333Z" stroke="url(#paint1_linear_1218_1043)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<defs>
+											<linearGradient id="paint0_linear_1218_1043" x1="3.97897" y1="16.0119" x2="27.9939" y2="16.0119" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+											<linearGradient id="paint1_linear_1218_1043" x1="11.993" y1="13.3365" x2="19.998" y2="13.3365" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#1A949D" />
+												<stop offset="1" stop-color="#5EBEB6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<span>Московская область, Ленинский район, Апаринки, владение 5/2, Московская обл.</span>
+								</div>
+							</div>
+						</div>
+						<div class="page-footer__copyright">Copyright © 2023 Power All rights reserved.</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="module" src="/main.js"></script>
+
+		<div class="modal form-modal">
+			<div class="modal__dialog">
+				<button class="modal__close">
+					<span>&times;</span>
+				</button>
+				<div class="modal__content">
+					<h2 class="section-title text-accent-gradient">
+						<span class="text-white">Chargeport</span>
+						Оставить заявку
+					</h2>
+
+					<form class="callback-form" id="callback-form">
+						<div class="callback-form__item">
+							<input type="text" id="callback_phone" name="callback_phone" class="form-control tel-input" placeholder="Телефон" />
+						</div>
+						<div class="callback-form__item">
+							<input type="text" id="callback_username" name="callback_username" class="form-control name-input" placeholder="Имя" />
+						</div>
+						<button type="submit" class="btn btn-accent">
+							<span>Отправить</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

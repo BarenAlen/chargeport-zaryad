@@ -1,0 +1,38 @@
+.btn {
+    height: 3.125rem;
+    position: relative;
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    &-accent {
+        background-image: $accent-gradient;
+        background-color: #5EBEB6;
+        color: #fff;
+        &:hover,
+        &:active {
+            color: #fff;
+            // background-image: linear-gradient(90deg, transparent 0%, transparent 0%);
+            // background-color: #1A949D;
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+            background: linear-gradient(90deg, #0060AC 0%, #0064AE 12.52%, #0071B2 30.99%, #1C86B7 53.18%, #3EA2B9 77.99%, #5EBEB6 99.92%);
+            z-index: 0;
+            border-radius: 130px;
+        }
+    }
+}

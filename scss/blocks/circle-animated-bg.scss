@@ -1,0 +1,19 @@
+.circle-animated-bg {
+    width: 738px;
+    height: 738px;
+    background-size: 738px;
+    background-image: url("/static/images/circle-dec.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.7);
+    animation: growShrink 8s ease-out infinite alternate;
+}
+
+@keyframes growShrink {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(0.95);
+    }
+}

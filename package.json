@@ -1,0 +1,24 @@
+{
+  "name": "pabst",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
+    "just-validate": "^4.2.0",
+    "normalize.css": "^8.0.1",
+    "sass": "1.64.2",
+    "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.1"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.8",
+    "swiper": "^10.3.1"
+  }
+}

@@ -1,0 +1,102 @@
+.page-footer {
+    background-color: #F0F3F7;
+    background-image: url("/static/images/bg-logo.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px bottom 0;
+    &__head {
+        margin-bottom: 1.875rem;
+    }
+    &__container {
+        padding-top: 4.625rem;
+        padding-bottom: 1.875rem;
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    &__text {
+        @extend .text-accent-gradient;
+    }
+    &__link {
+        span {
+            @extend .text-accent-gradient;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                left: 0;
+                right: 0;
+                bottom: 1px;
+                background-image: $accent-gradient;
+                background-repeat: no-repeat;
+                position: absolute;
+                opacity: 1;
+                transition: opacity 200ms;
+            }
+        }
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+            span::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__text,
+    &__link {
+        display: block;
+        margin-bottom: 0.625rem;
+        padding: 5px 0;
+        padding-left: 62px;
+        position: relative;
+        svg {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+    }
+
+    &__copyright {
+        padding-top: 5rem;
+        color: #8C8C8C;
+        font-size: $fsz-xs;
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.125rem;
+        &__title {
+            margin-bottom: 0;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        background-position: left calc(((100vw / 2) + (81.25rem / 2)) - 542px + 140px) bottom -4px;
+        &__container {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: -80px;
+                bottom: 0;
+                background-image: url("/static/images/footer-img.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 520px;
+                height: 520px;
+            }
+        }
+        &__content {
+            margin-left: auto;
+            max-width: 50rem;
+        }
+        &__copyright {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.guarantee-section {
+    
+    background: $accent-gradient;
+    color: #fff;
+
+    .container {
+        padding-top: 5.125rem;
+        padding-bottom: 5.125rem;
+        background-image: url("/static/images/guarantee-section-bg.svg");
+        background-repeat: no-repeat;
+        background-position: top 50% right 20px;
+    }
+
+    ul {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .section-title {
+        margin-bottom: 1.75rem;
+    }
+    @include media-breakpoint-up(md) {
+        .container {
+            background-position: top 20% right 30px;
+        }
+        ul {
+            font-size: 1.25rem;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 1.75rem;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .container {
+            background-position: top 50% left 240px;
+        }
+        .section-title {
+            margin-bottom: 0;
+        }
+    }
+}

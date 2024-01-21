@@ -1,0 +1,12 @@
+.overflow-hidden {
+    overflow: hidden;
+}
+.text-accent-gradient {
+    background-image: $accent-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.text-white {
+    color: #fff !important;
+}

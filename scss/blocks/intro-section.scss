@@ -1,0 +1,98 @@
+.intro-section {
+    padding: 2rem 0 3.25rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    position: relative;
+    &__bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        & > div {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 1000ms linear;
+            &:nth-child(1) {
+                background-image: url('/static//images/intro-bg-3.png');
+            }
+            &:nth-child(2) {
+                background-image: url('/static//images/intro-bg-2.png');
+            }
+            &:nth-child(3) {
+                background-image: url('/static//images/intro-bg.png');
+            }
+            &.visible {
+                opacity: 1;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            background: radial-gradient(50% 50% at 50% 50%, #292F30 0%, rgba(41, 47, 48, 0.00) 100%);
+            z-index: -1;
+            left: 25%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__name {
+        margin-bottom: 0.625rem;
+        @extend .text-accent-gradient
+    }
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    p {
+        margin-bottom: 1rem;
+        max-width: 690px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__content {
+            max-width: 52.5rem;
+            margin-left: auto;
+            text-align: right;
+            align-items: flex-end;
+            &::after {
+                left: 75%;
+            }
+        }
+        &__name {
+            font-weight: 5rem;
+        }
+        &__title {
+            margin-bottom: 1.875rem;
+            font-size: 3.125rem;
+        }
+        p {
+            margin-bottom: 1.875rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        min-height: 50rem;
+    }
+}
